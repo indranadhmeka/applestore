@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 // 🌐 Common Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 // 🏠 Main Pages
 import HomePage from "./pages/StorePage";
@@ -115,6 +117,7 @@ import TestGsapPage from "./pages/TestGsapPage";
 import ApplePodcastsPage from "./pages/entertainment/ApplePodcastsPage";
 import AppleBooksPage from "./pages/entertainment/AppleBooksPage";
 
+
 const App = () => {
   return (
     <>
@@ -132,7 +135,8 @@ const App = () => {
           <Route path="/entertainment" element={<EntertainmentPage />} />
           <Route path="/accessories" element={<AccessoriesPage />} />
           <Route path="/support" element={<SupportPage />} />
-
+          <Route path="/login" element={<Login />}/>
+          <Route path="/signup" element={<Signup/>}/>
            {/* ===== SUPPORT SUBPAGES ===== */}
           <Route path="/support/forgot-password" element={<ForgotPassword />} />
           <Route path="/support/repair" element={<RepairPage />} />
